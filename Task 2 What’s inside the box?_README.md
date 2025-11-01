@@ -1,10 +1,11 @@
-# Image Processing GUI
+# Image Processing GUI Task 2 What’s inside the box?
+
 
 An adaptable, modern GUI for image processing with support for FFT, diffusion methods, and various enhancement techniques. All parameters are adjustable in real-time.
 
 ## Features
 
-### **NEW: Adaptive Grid Enhancement** 🎯
+### **NEW: Adaptive Grid Enhancement** 
 
 Perfect for images with uneven sharpness - where some parts are sharp (like your owl's right eye) but other details are blurry!
 
