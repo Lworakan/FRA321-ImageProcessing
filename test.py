@@ -1,36 +1,52 @@
 import cv2
-import numpy as np
-from realesrgan import RealESRGAN
-from PIL import Image
+from matplotlib import pyplot as plt
 
-# 1. Load original image
-img = cv2.imread("datasets/inside-the-box.jpg")
+# Load the dark image
+image = cv2.imread("datasets/inside-the-box.jpg")
 
-# 2. Denoise first (keeps structure)
-denoised = cv2.fastNlMeansDenoisingColored(img, None, 10, 10, 7, 21)
+# Adjust brightness and contrast to reveal details
+alpha = 1.9  # Increase contrast
+beta = 130   # Increase brightness
 
-# 3. Super-resolution upscale (2× or 4×)
-model = RealESRGAN('cuda', scale=4)   # use 'cpu' if no GPU
-model.load_weights('RealESRGAN_x4plus.pth')
-sr_img = model.predict(Image.fromarray(cv2.cvtColor(denoised, cv2.COLOR_BGR2RGB)))
-sr_img = cv2.cvtColor(np.array(sr_img), cv2.COLOR_RGB2BGR)
 
-# 4. Edge-aware sharpening
-gray = cv2.cvtColor(sr_img, cv2.COLOR_BGR2GRAY)
-lap = cv2.Laplacian(gray, cv2.CV_16S, ksize=3)
-lap = cv2.convertScaleAbs(lap)
-sharpen_mask = cv2.merge([lap, lap, lap])
-sharpened = cv2.addWeighted(sr_img, 1.25, sharpen_mask, 0.4, 0)
+# Enhance brightness and contrast
+bright_image = cv2.convertScaleAbs(image, alpha=alpha, beta=beta)
 
-# 5. Local contrast boost (CLAHE)
-lab = cv2.cvtColor(sharpened, cv2.COLOR_BGR2LAB)
-l, a, b = cv2.split(lab)
-clahe = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(8,8))
-cl = clahe.apply(l)
-final_img = cv2.cvtColor(cv2.merge((cl, a, b)), cv2.COLOR_LAB2BGR)
+# Convert to grayscale to see details better
+gray_image = cv2.cvtColor(bright_image, cv2.COLOR_BGR2GRAY)
+# Convert the enhanced brightened image to grayscale first for CLAHE
+gray_image_clahe = cv2.cvtColor(bright_image, cv2.COLOR_BGR2GRAY)
 
-# Save + Show
-cv2.imwrite("OWL_SemiAI_Final.png", final_img)
-cv2.imshow("Final Result", final_img)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+# Create a CLAHE object with a clip limit and tile grid size for local enhancement
+clahe = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(13, 13))
+clahe_image = clahe.apply(gray_image_clahe)
+
+# Display the CLAHE enhanced image along with previous ones
+plt.figure(figsize=(15, 5))
+
+# Show original
+plt.subplot(1, 4, 1)
+plt.title("Original Dark Image")
+plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+plt.axis('off')
+
+# Show enhanced bright image
+plt.subplot(1, 4, 2)
+plt.title("Enhanced Brightened Image")
+plt.imshow(cv2.cvtColor(bright_image, cv2.COLOR_BGR2RGB))
+plt.axis('off')
+
+# Show grayscale enhanced image
+plt.subplot(1, 4, 3)
+plt.title("Grayscale Enhanced Image")
+plt.imshow(gray_image, cmap='gray')
+plt.axis('off')
+
+# Show CLAHE enhanced grayscale image
+plt.subplot(1, 4, 4)
+plt.title("CLAHE Enhanced Image")
+plt.imshow(clahe_image, cmap='gray')
+plt.axis('off')
+
+plt.tight_layout()
+plt.show()

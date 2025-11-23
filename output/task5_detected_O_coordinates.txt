@@ -1,0 +1,6 @@
+Detected 'O' Characters - Coordinates and Properties
+================================================================================
+
+Image: datasets/text_frombook.png
+Total 'O' detected: 0
+

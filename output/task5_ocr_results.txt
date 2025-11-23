@@ -1,0 +1,267 @@
+OCR-Based 'O' Character Detection Results
+================================================================================
+
+Image: datasets/text_frombook.png
+Date: 2025-11-03 00:19:26
+
+TESSERACT OCR:
+--------------------------------------------------------------------------------
+Total 'O' detected: 0
+
+EASYOCR:
+--------------------------------------------------------------------------------
+Total 'O' detected: 36
+Average confidence: 80.81%
+
+O #1:
+  Position: (x=86, y=0)
+  Size: 39×119 pixels
+  Confidence: 97.22%
+  Character: 'o'
+  Full text detected: 'ponents or broken connection paths There is no'
+
+O #2:
+  Position: (x=359, y=0)
+  Size: 39×119 pixels
+  Confidence: 97.22%
+  Character: 'o'
+  Full text detected: 'ponents or broken connection paths There is no'
+
+O #3:
+  Position: (x=554, y=0)
+  Size: 39×119 pixels
+  Confidence: 97.22%
+  Character: 'o'
+  Full text detected: 'ponents or broken connection paths There is no'
+
+O #4:
+  Position: (x=788, y=0)
+  Size: 39×119 pixels
+  Confidence: 97.22%
+  Character: 'o'
+  Full text detected: 'ponents or broken connection paths There is no'
+
+O #5:
+  Position: (x=1061, y=0)
+  Size: 39×119 pixels
+  Confidence: 97.22%
+  Character: 'o'
+  Full text detected: 'ponents or broken connection paths There is no'
+
+O #6:
+  Position: (x=1802, y=0)
+  Size: 39×119 pixels
+  Confidence: 97.22%
+  Character: 'o'
+  Full text detected: 'ponents or broken connection paths There is no'
+
+O #7:
+  Position: (x=118, y=94)
+  Size: 34×125 pixels
+  Confidence: 81.03%
+  Character: 'o'
+  Full text detected: 'tion past the level of detail required to identify those'
+
+O #8:
+  Position: (x=730, y=94)
+  Size: 34×125 pixels
+  Confidence: 81.03%
+  Character: 'o'
+  Full text detected: 'tion past the level of detail required to identify those'
+
+O #9:
+  Position: (x=1410, y=94)
+  Size: 34×125 pixels
+  Confidence: 81.03%
+  Character: 'o'
+  Full text detected: 'tion past the level of detail required to identify those'
+
+O #10:
+  Position: (x=1852, y=94)
+  Size: 34×125 pixels
+  Confidence: 81.03%
+  Character: 'o'
+  Full text detected: 'tion past the level of detail required to identify those'
+
+O #11:
+  Position: (x=508, y=202)
+  Size: 36×112 pixels
+  Confidence: 90.73%
+  Character: 'o'
+  Full text detected: 'Segmentation of nontrivial images is one of the mos'
+
+O #12:
+  Position: (x=616, y=202)
+  Size: 36×112 pixels
+  Confidence: 90.73%
+  Character: 'o'
+  Full text detected: 'Segmentation of nontrivial images is one of the mos'
+
+O #13:
+  Position: (x=760, y=202)
+  Size: 36×112 pixels
+  Confidence: 90.73%
+  Character: 'o'
+  Full text detected: 'Segmentation of nontrivial images is one of the mos'
+
+O #14:
+  Position: (x=1480, y=202)
+  Size: 36×112 pixels
+  Confidence: 90.73%
+  Character: 'o'
+  Full text detected: 'Segmentation of nontrivial images is one of the mos'
+
+O #15:
+  Position: (x=1624, y=202)
+  Size: 36×112 pixels
+  Confidence: 90.73%
+  Character: 'o'
+  Full text detected: 'Segmentation of nontrivial images is one of the mos'
+
+O #16:
+  Position: (x=1912, y=202)
+  Size: 36×112 pixels
+  Confidence: 90.73%
+  Character: 'o'
+  Full text detected: 'Segmentation of nontrivial images is one of the mos'
+
+O #17:
+  Position: (x=128, y=302)
+  Size: 38×120 pixels
+  Confidence: 67.16%
+  Character: 'o'
+  Full text detected: 'processing: Segmentation accuracy determines the ev'
+
+O #18:
+  Position: (x=888, y=302)
+  Size: 38×120 pixels
+  Confidence: 67.16%
+  Character: 'o'
+  Full text detected: 'processing: Segmentation accuracy determines the ev'
+
+O #19:
+  Position: (x=54, y=400)
+  Size: 36×124 pixels
+  Confidence: 66.06%
+  Character: 'o'
+  Full text detected: 'of computerized analysis procedures For this reason, €'
+
+O #20:
+  Position: (x=198, y=400)
+  Size: 36×124 pixels
+  Confidence: 66.06%
+  Character: 'o'
+  Full text detected: 'of computerized analysis procedures For this reason, €'
+
+O #21:
+  Position: (x=1026, y=400)
+  Size: 36×124 pixels
+  Confidence: 66.06%
+  Character: 'o'
+  Full text detected: 'of computerized analysis procedures For this reason, €'
+
+O #22:
+  Position: (x=1386, y=400)
+  Size: 36×124 pixels
+  Confidence: 66.06%
+  Character: 'o'
+  Full text detected: 'of computerized analysis procedures For this reason, €'
+
+O #23:
+  Position: (x=1818, y=400)
+  Size: 36×124 pixels
+  Confidence: 66.06%
+  Character: 'o'
+  Full text detected: 'of computerized analysis procedures For this reason, €'
+
+O #24:
+  Position: (x=418, y=504)
+  Size: 36×120 pixels
+  Confidence: 69.61%
+  Character: 'o'
+  Full text detected: 'be taken to improve the probability of rugged segment'
+
+O #25:
+  Position: (x=634, y=504)
+  Size: 36×120 pixels
+  Confidence: 69.61%
+  Character: 'o'
+  Full text detected: 'be taken to improve the probability of rugged segment'
+
+O #26:
+  Position: (x=994, y=504)
+  Size: 36×120 pixels
+  Confidence: 69.61%
+  Character: 'o'
+  Full text detected: 'be taken to improve the probability of rugged segment'
+
+O #27:
+  Position: (x=1354, y=504)
+  Size: 36×120 pixels
+  Confidence: 69.61%
+  Character: 'o'
+  Full text detected: 'be taken to improve the probability of rugged segment'
+
+O #28:
+  Position: (x=998, y=604)
+  Size: 35×121 pixels
+  Confidence: 85.23%
+  Character: 'o'
+  Full text detected: 'such as industrial inspection applicationsat least some'
+
+O #29:
+  Position: (x=1418, y=604)
+  Size: 35×121 pixels
+  Confidence: 85.23%
+  Character: 'o'
+  Full text detected: 'such as industrial inspection applicationsat least some'
+
+O #30:
+  Position: (x=1873, y=604)
+  Size: 35×121 pixels
+  Confidence: 85.23%
+  Character: 'o'
+  Full text detected: 'such as industrial inspection applicationsat least some'
+
+O #31:
+  Position: (x=391, y=704)
+  Size: 37×122 pixels
+  Confidence: 81.52%
+  Character: 'o'
+  Full text detected: 'the environment is possible at times The experienced'
+
+O #32:
+  Position: (x=798, y=704)
+  Size: 37×122 pixels
+  Confidence: 81.52%
+  Character: 'o'
+  Full text detected: 'the environment is possible at times The experienced'
+
+O #33:
+  Position: (x=968, y=802)
+  Size: 35×116 pixels
+  Confidence: 75.06%
+  Character: 'o'
+  Full text detected: 'designer invariably pays considerable attention to such'
+
+O #34:
+  Position: (x=1633, y=802)
+  Size: 35×116 pixels
+  Confidence: 75.06%
+  Character: 'o'
+  Full text detected: 'designer invariably pays considerable attention to such'
+
+O #35:
+  Position: (x=1773, y=802)
+  Size: 35×116 pixels
+  Confidence: 75.06%
+  Character: 'o'
+  Full text detected: 'designer invariably pays considerable attention to such'
+
+O #36:
+  Position: (x=1906, y=-6)
+  Size: 42×115 pixels
+  Confidence: 70.43%
+  Character: 'o'
+  Full text detected: 'poiI'
+
